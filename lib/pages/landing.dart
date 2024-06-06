@@ -14,10 +14,12 @@ class Landing extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           // image
           children: [
+            
             Image.asset("lib/images/landingpg.jpg",
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
             height: 500,
+            
             ),
 
             const SizedBox(height: 15),
