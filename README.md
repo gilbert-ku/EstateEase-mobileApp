@@ -1,5 +1,5 @@
 # EstateEase App
-![Screenshot from 2024-06-03 23-49-02](https://github.com/gilbert-ku/EstateEase-mobileApp/assets/125896467/337daeb3-0022-4908-a82c-83a4fc7f4d73)
+![demo](https://github.com/gilbert-ku/EstateEase-mobileApp/assets/125896467/6f08a2c5-a05e-4761-94be-8da0a72cb475)
 
 Welcome to EstateEase App, your comprehensive solution for all real estate needs. Whether you're house hunting, listing properties, renting, or managing your tenancy, EstateEase App has you covered. This README provides an overview of the application, its features, and instructions for getting started.
 
