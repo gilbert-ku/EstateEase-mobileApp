@@ -1,3 +1,4 @@
+import 'package:estate_app/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatelessWidget {
@@ -164,9 +165,9 @@ class Register extends StatelessWidget {
 
                 const SizedBox(height: 30,),
 
-                const Row(
+                 Row(
                   children: [
-                    Text("Already Have An Account?",
+                    const Text("Already Have An Account?",
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.white,
@@ -174,14 +175,21 @@ class Register extends StatelessWidget {
                     ),
 
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8.0),
-                      child: Text("Sign In",
-                      style: TextStyle(
-                        fontFamily: AutofillHints.birthdayDay,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 184, 209, 230)
-                      ),
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: GestureDetector(
+                        onTap: () => Navigator.push(context, 
+                        MaterialPageRoute(
+                          builder: (context) => const Login()
+                          ),
+                          ),
+                        child: const Text("Sign In",
+                        style: TextStyle(
+                          fontFamily: AutofillHints.birthdayDay,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromARGB(255, 184, 209, 230)
+                        ),
+                        ),
                       ),
                     ),
                   ],
