@@ -1,4 +1,6 @@
+import 'package:estate_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
+
 
 class Landing extends StatelessWidget {
   const Landing({super.key});
@@ -9,6 +11,7 @@ class Landing extends StatelessWidget {
       backgroundColor: Colors.blue,
        body: Center(
          child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           // image
           children: [
             Image.asset("lib/images/landingpg.jpg",
@@ -49,18 +52,26 @@ class Landing extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-              child: Container(
-                decoration:  BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
-                 ),
-                child: const Padding(
-                  padding: EdgeInsets.all(20.0),
-                  child: Center(
-                    child: Text("Get Register",
-                    style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.w700),
+              child: GestureDetector(
+                onTap: () => Navigator.push(context, 
+                MaterialPageRoute(
+                  builder: (context) => const HomePage()
+                  ),
+                  ),
+                    
+                child: Container(
+                  decoration:  BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
+                   ),
+                  child: const Padding(
+                    padding: EdgeInsets.all(20.0),
+                    child: Center(
+                      child: Text("Get Register",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w700),
+                      ),
                     ),
                   ),
                 ),
