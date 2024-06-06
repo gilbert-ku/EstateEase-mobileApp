@@ -49,7 +49,44 @@ class HomePage extends StatelessWidget {
                   height: 300.0,
                   ),
                 ),
-                // input field
+
+
+                // input field name
+
+                const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: "Enter Your Email Adress",
+                    fillColor: Colors.white,
+                    filled: true
+                  ),
+                ),
+
+                const SizedBox(height: 20,),
+
+
+                // input password
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: "Confirm Password",
+                    fillColor: Colors.white,
+                    filled: true,
+                    
+                  ),
+                ),
+
+                // forgot password
+
+                const SizedBox(height: 30,),
+
+                const Text("Forgot Password",
+                style: TextStyle(
+                  fontSize: 17,
+                  color: Color.fromARGB(255, 202, 215, 228)
+                ),
+                )
               ],
             ),
           ),
