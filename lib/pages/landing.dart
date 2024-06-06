@@ -12,6 +12,8 @@ class Landing extends StatelessWidget {
           // image
           children: [
             Image.asset("lib/images/landingpg.jpg",
+            width: MediaQuery.of(context).size.width,
+            fit: BoxFit.cover,
             height: 500,
             ),
 
@@ -27,19 +29,21 @@ class Landing extends StatelessWidget {
             ),
             ),
 
+            const SizedBox(height: 10),
+
             const Padding(
               // padding: EdgeInsets.all(8.0),
               padding: EdgeInsets.symmetric(horizontal: 25),
-              child:  Text("lorem lommsdlskdsd sdksldkslkdslkdsdks klskdsldksldksldksd kdslkdsldksdksldk kdksdkskdsdks",
+              child:  Text("Welcome to EstateEase App: Your seamless solution for finding, renting, and managing payments. Let's get started on making your rental experience effortless!",
               style: TextStyle(
-                fontWeight: FontWeight.w300,
-                fontSize: 17,
+                fontWeight: FontWeight.w500,
+                fontSize: 20,
               ),
               textAlign: TextAlign.start,
               ),
             ),
 
-            const SizedBox(height: 30),
+            const SizedBox(height: 10),
 
             // start btn
 
@@ -55,8 +59,8 @@ class Landing extends StatelessWidget {
                   child: Center(
                     child: Text("Get Register",
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600),
+                      fontSize: 17,
+                      fontWeight: FontWeight.w700),
                     ),
                   ),
                 ),
