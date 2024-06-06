@@ -1,4 +1,4 @@
-import 'package:estate_app/pages/login.dart';
+import 'package:estate_app/pages/register.dart';
 import 'package:flutter/material.dart';
 
 
@@ -57,7 +57,7 @@ class Landing extends StatelessWidget {
               child: GestureDetector(
                 onTap: () => Navigator.push(context, 
                 MaterialPageRoute(
-                  builder: (context) => const HomePage()
+                  builder: (context) => const Register()
                   ),
                   ),
                     
