@@ -1,4 +1,5 @@
-import 'package:estate_app/pages/landing.dart';
+import 'package:estate_app/pages/house_listing.dart';
+// import 'package:estate_app/pages/landing.dart';
 import 'package:flutter/material.dart';
 
 
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
         // dialogBackgroundColor: Color. ,
         useMaterial3: true,
       ),
-      home: const Landing(),
+      // home: const Landing(),
+      home: const HouseListing(),
       // theme: ThemeData(primarySwatch: Colors.blue)
     );
   }
