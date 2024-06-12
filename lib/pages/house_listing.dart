@@ -40,13 +40,91 @@ class HouseListing extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: ListView(
-            children: const <Widget> [
-              Text("Welcome Gilbert, We have made your house hunting Easy.",
+            children: <Widget> [
+              const Text("Welcome Gilbert, We have made your house hunting Easy.",
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.white
               ),
-              )
+              ),
+              
+              const SizedBox(height: 5,),
+
+              // properties
+
+              Center(
+                child: Image.asset("lib/images/bungalo.jpg",
+                height: 250,
+                width: MediaQuery.of(context).size.width,
+                fit: BoxFit.cover,
+                ),
+              ),
+
+              const SizedBox(height: 15,),
+
+
+
+              Center(
+                child: Stack(
+                  children: [
+                    Image.asset("lib/images/apartment.jpg",
+                    height: 250,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                    
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        
+                        children: [
+                          Column(
+                            children: [
+                              Text("Kingdom",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 237, 240, 241),
+                                fontWeight: FontWeight.w400,
+                                
+                                ),
+                              ),
+                              Text("Apartments",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                              )
+                            ],
+                          ),
+                      
+                          Icon(Icons.arrow_circle_right,
+                          size: 40,
+                          color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                    
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 15,),
+
+
+
+              Center(
+                child: Image.asset("lib/images/mansion.png",
+                height: 250,
+                width: MediaQuery.of(context).size.width,
+                fit: BoxFit.cover,
+                ),
+              ),
+
+              const SizedBox(height: 5,),
+
             ],
           ),
         ),
