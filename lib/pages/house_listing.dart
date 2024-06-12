@@ -52,11 +52,50 @@ class HouseListing extends StatelessWidget {
 
               // properties
 
-              Center(
-                child: Image.asset("lib/images/bungalo.jpg",
-                height: 250,
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.cover,
+             Center(
+                child: Stack(
+                  children: [
+                    Image.asset("lib/images/bungalo.jpg",
+                    height: 250,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                    
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        
+                        children: [
+                          Column(
+                            children: [
+                              Text("Breeze Estate",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 237, 240, 241),
+                                fontWeight: FontWeight.w400,
+                                
+                                ),
+                              ),
+                              Text("Bungalow",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                              )
+                            ],
+                          ),
+                      
+                          Icon(Icons.arrow_circle_right,
+                          size: 40,
+                          color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                    
+                  ],
                 ),
               ),
 
