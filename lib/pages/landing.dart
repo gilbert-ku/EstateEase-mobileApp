@@ -16,6 +16,7 @@ class Landing extends StatelessWidget {
           children: [
             
             Image.asset("lib/images/landingpg.jpg",
+            alignment: Alignment.bottomCenter,
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
             height: 500,
