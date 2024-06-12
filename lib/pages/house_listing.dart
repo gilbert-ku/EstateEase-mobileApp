@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class HouseListing extends StatelessWidget {
@@ -18,7 +17,7 @@ class HouseListing extends StatelessWidget {
         ),
         title: const Center(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+            padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 15.0),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(
@@ -35,6 +34,22 @@ class HouseListing extends StatelessWidget {
         ),
         elevation: 0,
         backgroundColor: Colors.blue,
+      ),
+
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          child: ListView(
+            children: const <Widget> [
+              Text("Welcome Gilbert, We have made your house hunting Easy.",
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white
+              ),
+              )
+            ],
+          ),
+        ),
       ),
 
     );
