@@ -53,60 +53,84 @@ class HouseListing extends StatelessWidget {
 
               // properties
 
-             Center(
+              // bungalow
+
+                Center(
                 child: Stack(
+                  alignment: Alignment.bottomCenter,
                   children: [
-                    Image.asset("lib/images/bungalo.jpg",
-                    height: 250,
-                    width: MediaQuery.of(context).size.width,
-                    fit: BoxFit.cover,
-                    
+                    ShaderMask(
+                      shaderCallback: (rect) {
+                        return const LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.black,
+                            Colors.white,
+                            Colors.transparent,
+                          ],
+                        ).createShader(
+                          Rect.fromLTWH(
+                            0, 0, rect.width, rect.height
+                          )
+                        );
+                      },
+                      blendMode: BlendMode.dstIn,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(15.0),
+                        child: Image.asset(
+                          "lib/images/bungalo.jpg",
+                          height: 250,
+                          width: MediaQuery.of(context).size.width,
+                          fit: BoxFit.cover,
+                          
+                        ),
+                      ),
                     ),
+
                     const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 10, 
+                        vertical: 15,
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        
                         children: [
                           Column(
                             children: [
                               Text("Breeze Estate",
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 237, 240, 241),
-                                fontWeight: FontWeight.w400,
-                                
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color.fromARGB(255, 237, 240, 241),
+                                  fontWeight: FontWeight.w600,
+                                  
+                                  ),
                                 ),
-                              ),
-                              Text("Bungalow",
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 25,
-                              ),
-                              )
+                                Text("Bungalow",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 25,
+                                  color: Colors.white
+                                ),
+                                )
                             ],
                           ),
                       
                           Icon(Icons.arrow_circle_right,
-                          size: 40,
-                          color: Colors.white,
-                          )
+                            size: 40,
+                            color: Colors.white,
+                            )
                         ],
                       ),
                     ),
-                    
-                  ],
+                  ],  
                 ),
               ),
-
+           
               const SizedBox(height: 15,),
 
-
               // apartments
-
                Center(
                 child: Stack(
                   alignment: Alignment.bottomCenter,
@@ -143,7 +167,7 @@ class HouseListing extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 10, 
-                        vertical: 10
+                        vertical: 15
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -180,7 +204,6 @@ class HouseListing extends StatelessWidget {
                 ),
               ),
              
-              
               const SizedBox(height: 15,),
 
               // mansion
@@ -221,7 +244,7 @@ class HouseListing extends StatelessWidget {
                     const Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 10, 
-                        vertical: 10
+                        vertical: 15
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
