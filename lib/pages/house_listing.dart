@@ -63,7 +63,7 @@ class HouseListing extends StatelessWidget {
               const SizedBox(height: 15,),
 
 
-
+              // apartments
               Center(
                 child: Stack(
                   children: [
@@ -116,10 +116,49 @@ class HouseListing extends StatelessWidget {
 
 
               Center(
-                child: Image.asset("lib/images/mansion.png",
-                height: 250,
-                width: MediaQuery.of(context).size.width,
-                fit: BoxFit.cover,
+                child: Stack(
+                  children: [
+                    Image.asset("lib/images/mansion.png",
+                    height: 250,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                    
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        
+                        children: [
+                          Column(
+                            children: [
+                              Text("Thy Kings",
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 237, 240, 241),
+                                fontWeight: FontWeight.w400,
+                                
+                                ),
+                              ),
+                              Text("Mansion",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25,
+                              ),
+                              )
+                            ],
+                          ),
+                      
+                          Icon(Icons.arrow_circle_right,
+                          size: 40,
+                          color: Colors.white,
+                          )
+                        ],
+                      ),
+                    ),
+                    
+                  ],
                 ),
               ),
 
