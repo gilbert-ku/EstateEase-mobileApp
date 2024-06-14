@@ -1,3 +1,4 @@
+import 'package:estate_app/components/bungalow.dart';
 import 'package:flutter/material.dart';
 
 class HouseListing extends StatelessWidget {
@@ -65,7 +66,7 @@ class HouseListing extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black,
+                            Color.fromARGB(255, 238, 234, 234),
                             Colors.white,
                             Colors.transparent,
                           ],
@@ -88,8 +89,8 @@ class HouseListing extends StatelessWidget {
                       ),
                     ),
 
-                    const Padding(
-                      padding: EdgeInsets.symmetric(
+                     Padding(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 10, 
                         vertical: 15,
                       ),
@@ -97,7 +98,7 @@ class HouseListing extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          Column(
+                          const Column(
                             children: [
                               Text("Breeze Estate",
                                 style: TextStyle(
@@ -117,10 +118,22 @@ class HouseListing extends StatelessWidget {
                             ],
                           ),
                       
-                          Icon(Icons.arrow_circle_right,
-                            size: 40,
-                            color: Colors.white,
-                            )
+                          // Icon(Icons.arrow_circle_right,
+                          //   size: 40,
+                          //   color: Colors.white,
+                          // ),
+
+                          GestureDetector(
+                            onTap: () => Navigator.push(context, 
+                            MaterialPageRoute(
+                              builder: (context) => const Bungalow()
+                              )),
+                              child: const Icon(Icons.arrow_circle_right,
+                              size: 40,
+                              color: Colors.white,
+                            ),
+                          ),
+
                         ],
                       ),
                     ),
@@ -141,7 +154,7 @@ class HouseListing extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black,
+                            Colors.white,
                             Colors.white,
                             Colors.transparent,
                           ],
@@ -217,7 +230,7 @@ class HouseListing extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black,
+                            Colors.white,
                             Colors.white,
                             Colors.transparent,
                           ],
