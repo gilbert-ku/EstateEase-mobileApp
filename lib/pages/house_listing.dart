@@ -291,16 +291,16 @@ class HouseListing extends StatelessWidget {
                             ],
                           ),
                       
-                          // GestureDetector(
-                          //   onTap: () => Navigator.push(context, 
-                          //   MaterialPageRoute(
-                          //     builder: (context) => const Mansion()
-                          //     )),
-                          //     child: const Icon(Icons.arrow_circle_right,
-                          //     size: 40,
-                          //     color: Colors.white,
-                          //   ),
-                          // ),
+                          GestureDetector(
+                            onTap: () => Navigator.push(context, 
+                            MaterialPageRoute(
+                              builder: (context) => const Mansion()
+                              )),
+                              child: const Icon(Icons.arrow_circle_right,
+                              size: 40,
+                              color: Colors.white,
+                            ),
+                          ),
                         ],
                       ),
                     ),
