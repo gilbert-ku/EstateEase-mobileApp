@@ -120,7 +120,8 @@ class HouseListing extends StatelessWidget {
                             onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const Bungalow())),
+                                    builder: (context) => const Bungalow()
+                                    )),
                             child: const Icon(
                               Icons.arrow_circle_right,
                               size: 40,
