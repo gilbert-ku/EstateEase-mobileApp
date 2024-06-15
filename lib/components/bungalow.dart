@@ -71,9 +71,42 @@ class Bungalow extends StatelessWidget {
                     color: Colors.white
                   ),
                   ),
+
+                  SizedBox(height: 15,),
+
+                  Row(
+                    children: [
+                      Icon(Icons.reviews,
+                      color: Colors.white,
+                      size: 18,
+                      ),
+
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 3),
+                        child: Text("Estate Reviews", 
+                        style: TextStyle(
+                          color: Colors.white
+                        ),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
-            ), 
+            ),
+
+            const SizedBox( height: 15,),
+             const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text("Vacant Houses",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w700,
+                fontSize: 20,
+              ),
+              ),
+            ),
+
           ],
         ),
       )
