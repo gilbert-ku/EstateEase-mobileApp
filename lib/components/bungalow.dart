@@ -12,15 +12,68 @@ class Bungalow extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: const BorderRadius.only(
-                bottomRight: Radius.circular(40), 
-                bottomLeft: Radius.circular(40)
+                bottomRight: Radius.circular(30), 
+                bottomLeft: Radius.circular(30)
                 ),
                 child: Image.asset("lib/images/bungalo.jpg",
                 height: 400,
                 width: MediaQuery.of(context).size.width,
                 fit: BoxFit.cover,
               ),
-            )  
+            ),
+
+            // text widget
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              
+              child: Column(
+                // mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Breeze Estate",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                  
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.location_pin,
+                      size: 20,
+                      color: Colors.white,
+                      ),
+
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 4.0),
+                        child: Text("Langata, Uhuru Gardens",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white,
+                        ),
+                        ),
+                      ),
+                    ],
+                  ),
+                   SizedBox(height: 15,),
+
+                  Text("Discover Breeze Estate.",
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.white,
+                    color: Colors.white
+                  ),
+                  ),
+                  Text("The ideal rental community featuring single-story bungalow houses with 2, 3, 4, and 5-bedroom options. Enjoy a secure living environment with dedicated parking, a spacious general compound, and top-notch security. Experience comfort and convenience at Breeze Estate.",
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
+                  ),
+                ],
+              ),
+            ), 
           ],
         ),
       )
