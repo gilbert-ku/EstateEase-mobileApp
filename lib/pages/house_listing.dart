@@ -53,6 +53,67 @@ class HouseListing extends StatelessWidget {
                 ),
               )
             ),
+
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+              child: Divider(
+                color: Color.fromARGB(255, 206, 203, 203),
+              ),
+            ),
+            ListTile(
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "H O M E",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+
+                ListTile(
+                  leading: Icon(
+                    Icons.houseboat_sharp,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "P R O P E R T Y",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+
+
+                ListTile(
+                  leading: Icon(
+                    Icons.move_up_sharp,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "M O V E R S",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+
+
+                ListTile(
+                  leading: Icon(
+                    Icons.info,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "A B O U T U S",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+
           ],
         ),
       ),
