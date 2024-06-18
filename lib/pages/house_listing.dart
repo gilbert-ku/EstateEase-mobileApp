@@ -41,7 +41,21 @@ class HouseListing extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 3, 99, 179),
       ),
 
-      drawer: const Drawer(),
+      drawer: const Drawer(
+        backgroundColor: Color.fromARGB(255, 56, 144, 216),
+        child: Column(
+          children: [
+            DrawerHeader(
+              child: CircleAvatar(
+                radius: 55,
+                backgroundColor: Color.fromARGB(255, 198, 205, 211),
+                backgroundImage: AssetImage("lib/images/profile2.png",
+                ),
+              )
+            ),
+          ],
+        ),
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
