@@ -31,7 +31,8 @@ class HouseListing extends StatelessWidget {
             decoration: InputDecoration(
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15)),
-                    borderSide: BorderSide.none),
+                    borderSide: BorderSide.none
+                    ),
                 hintText: "Search property based on location and bedroom",
                 fillColor: Colors.white,
                 filled: true),
@@ -42,7 +43,7 @@ class HouseListing extends StatelessWidget {
       ),
 
       drawer: const Drawer(
-        backgroundColor: Color.fromARGB(255, 56, 144, 216),
+        backgroundColor: Color.fromARGB(255, 28, 70, 104),
         child: Column(
           children: [
             DrawerHeader(

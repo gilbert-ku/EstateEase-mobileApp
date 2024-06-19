@@ -96,6 +96,7 @@ class Bungalow extends StatelessWidget {
             ),
 
             const SizedBox( height: 15,),
+
              const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Text("Vacant Houses",
@@ -106,6 +107,30 @@ class Bungalow extends StatelessWidget {
               ),
               ),
             ),
+
+            // image carousel
+
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    height: 300,
+                    // color: Colors.amber,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFffffff),
+                      image: DecorationImage(
+                        image: AssetImage("lib/images/breeze.jpeg"),
+                        fit: BoxFit.cover,
+
+                      ),
+                    ),
+                    
+                  ),
+                ),
+              ),
+            )
 
           ],
         ),
