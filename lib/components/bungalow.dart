@@ -116,7 +116,9 @@ class Bungalow extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
+                    // color: Colors.transparent,
                     height: 300,
+                    width: MediaQuery.of(context).size.width,
                     // color: Colors.amber,
                     decoration: const BoxDecoration(
                       color: Color(0xFFffffff),
@@ -126,7 +128,53 @@ class Bungalow extends StatelessWidget {
 
                       ),
                     ),
-                    
+                    // gradient
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.center,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.transparent,
+                            Colors.black,
+                          ],
+                          // stops: [
+                          //   0.8,
+                          //   0.2,
+                          // ]
+                        ),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          // crossAxisAlignment: CrossAxisAlignment.,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              // crossAxisAlignment: CrossAxisAlignment.baseline,
+                              children: [
+                                Text("House No 17B",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                        
+                                Icon(
+                                Icons.arrow_circle_right,
+                                size: 40,
+                                color: Colors.blue,
+                              ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                    ),
+                  
                   ),
                 ),
               ),
