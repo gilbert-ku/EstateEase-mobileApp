@@ -11,7 +11,8 @@ class Landing extends StatelessWidget {
       backgroundColor: Colors.blue,
        body: Center(
          child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
           // image
           children: [
             

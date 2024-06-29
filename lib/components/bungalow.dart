@@ -108,7 +108,152 @@ class Bungalow extends StatelessWidget {
               ),
             ),
 
+            const SizedBox( height: 15,),
+
             // image carousel
+
+            // Expanded(child: child),
+            
+
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    // color: Colors.transparent,
+                    height: 300,
+                    width: MediaQuery.of(context).size.width,
+                    // color: Colors.amber,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFffffff),
+                      image: DecorationImage(
+                        image: AssetImage("lib/images/breeze.jpeg"),
+                        fit: BoxFit.cover,
+
+                      ),
+                    ),
+                    // gradient
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.center,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.transparent,
+                            Colors.black,
+                          ],
+                          // stops: [
+                          //   0.8,
+                          //   0.2,
+                          // ]
+                        ),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          // crossAxisAlignment: CrossAxisAlignment.,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              // crossAxisAlignment: CrossAxisAlignment.baseline,
+                              children: [
+                                Text("House No 17B",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                        
+                                Icon(
+                                Icons.arrow_circle_right,
+                                size: 40,
+                                color: Colors.blue,
+                              ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                    ),
+                  
+                  ),
+                ),
+              ),
+            ),
+
+             Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    // color: Colors.transparent,
+                    height: 300,
+                    width: MediaQuery.of(context).size.width,
+                    // color: Colors.amber,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFffffff),
+                      image: DecorationImage(
+                        image: AssetImage("lib/images/breeze.jpeg"),
+                        fit: BoxFit.cover,
+
+                      ),
+                    ),
+                    // gradient
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.center,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.transparent,
+                            Colors.black,
+                          ],
+                          // stops: [
+                          //   0.8,
+                          //   0.2,
+                          // ]
+                        ),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          // crossAxisAlignment: CrossAxisAlignment.,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              // crossAxisAlignment: CrossAxisAlignment.baseline,
+                              children: [
+                                Text("House No 17B",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                        
+                                Icon(
+                                Icons.arrow_circle_right,
+                                size: 40,
+                                color: Colors.blue,
+                              ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                    ),
+                  
+                  ),
+                ),
+              ),
+            ),
 
              Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
